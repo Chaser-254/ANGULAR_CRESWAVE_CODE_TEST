@@ -1,16 +1,10 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-// Import for contact Service, used for adding and display contacts with the backend server.
 import { ApiService } from './api.service';
-
 import { AppRoutingModule } from './app.routes';
 import {AppComponent} from './app.component';
-// Import for HTTP requests
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// Imported Components
-
-// Import for Forms
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
