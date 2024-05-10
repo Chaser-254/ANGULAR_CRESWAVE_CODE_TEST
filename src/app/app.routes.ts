@@ -8,22 +8,22 @@ import { PageErrorComponent } from './page-error/page-error.component';
 
 const routes: Routes = [
   {
-      path: '', // Main view page for viewing task
+      path: '',
       component: ViewComponent,
   },
   {
-      path: 'completed', // Completed tasks page
+      path: 'completed',
       component: CompletedComponent,
   },
   {
-      path: 'edit/:id', // Edit page for editing a selected task
+      path: 'edit/:id',
       component: EditComponent
   },
   {
-      path: 'today', // Page that displayed current date tasks
+      path: 'today',
       component: TodayComponent,
   },
-  {path: '**', component: PageErrorComponent} // Displays 404 error page if user try's to nav to a page not in the app.
+  {path: '**', component: PageErrorComponent}
 ];
 
 @NgModule({
