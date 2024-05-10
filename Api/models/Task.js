@@ -2,7 +2,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//Define a schema
 let TasksSchema = new Schema({
     task_name: {
         type: String,
@@ -23,5 +22,4 @@ let TasksSchema = new Schema({
     }
 });
 
-// Compile model from schema
 module.exports = mongoose.model('Task', TasksSchema);
