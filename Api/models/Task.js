@@ -1,10 +1,9 @@
-//A data model using Schema Interface to represent the Post. 
-// Variables
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 //Define a schema
-let TasksSchema = new Schema({   //Title & content for creating and listing data
+let TasksSchema = new Schema({
     task_name: {
         type: String,
         required: true
@@ -21,7 +20,7 @@ let TasksSchema = new Schema({   //Title & content for creating and listing data
     },
     isComplete: {
         type: Boolean,
-    } //Used for updating if the task is completed
+    }
 });
 
 // Compile model from schema
